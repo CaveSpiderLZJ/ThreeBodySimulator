@@ -106,13 +106,4 @@ if __name__ == '__main__':
         ps.append(p[None,:,:])
     ps = np.concatenate(ps, axis=0)
     output_video(ps[::int((T*FS)/(T_OUT*FPS))])
-    plt.plot(ps[:,2,0])
-    plt.plot(ps[:,2,1])
-    plt.plot(ps[:,2,2])
-    plt.plot(ps[:,3,0])
-    plt.plot(ps[:,3,1])
-    plt.plot(ps[:,3,2])
-    plt.legend(['X1', 'Y1', 'Z1', 'X2', 'Y2', 'Z2'])
-    plt.show()
-    
-    
+    print('Done!')
